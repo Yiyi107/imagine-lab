@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications — IMAGINE Lab</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    .page-hero {
+      padding: calc(var(--nav-h) + 60px) 0 60px;
+      background: var(--ink);
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .page-hero p { color: rgba(255,255,255,.6); max-width: 520px; margin: 0 auto; }
+    .pubs-section { padding: 80px 0; }
+    .year-group { margin-bottom: 56px; }
+    .year-label {
+      font-family: var(--ff-display);
+      font-size: 1.4rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 28px;
+    }
+    .pub-item {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .pub-item:last-child { border-bottom: none; }
+    .pub-title {
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 5px;
+      font-size: 1.02rem;
+      line-height: 1.4;
+    }
+    .pub-authors {
+      font-size: .9rem;
+      color: var(--ink-light);
+      margin-bottom: 5px;
+    }
+    .pub-venue {
+      font-size: .88rem;
+      color: var(--accent2);
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .pub-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .pub-link {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 50px;
+      border: 1.5px solid var(--border);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ink-light);
+      transition: all .2s;
+    }
+    .pub-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">IMAGINE</span><span class="logo-sub"> Lab</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="research.html">Research</a>
+      <a href="team.html">Team</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Publications</h1>
+      <p>Peer-reviewed research from the IMAGINE Lab.</p>
+    </div>
+  </div>
+
+  <section class="pubs-section">
+    <div class="container">
+
+      <div class="year-group">
+        <div class="year-label">2025</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[Paper Title: Full title of your publication goes here]</div>
+          <div class="pub-authors">Author A, Author B, <strong>Director Name</strong></div>
+          <div class="pub-venue">Proceedings of the ACM CHI Conference on Human Factors in Computing Systems (CHI 2025)</div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">PDF</a>
+            <a href="#" class="pub-link">Code</a>
+            <a href="#" class="pub-link">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[Another Paper Title]</div>
+          <div class="pub-authors">Author A, <strong>Director Name</strong>, Author C</div>
+          <div class="pub-venue">Journal of Learning Analytics, Vol. X, 2025</div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">PDF</a>
+            <a href="#" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <div class="year-label">2024</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[Paper Title]</div>
+          <div class="pub-authors">Author B, <strong>Director Name</strong></div>
+          <div class="pub-venue">Educational Data Mining (EDM 2024)</div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">PDF</a>
+            <a href="#" class="pub-link">Slides</a>
+            <a href="#" class="pub-link">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">[Paper Title]</div>
+          <div class="pub-authors"><strong>Director Name</strong>, Author C, Author D</div>
+          <div class="pub-venue">Artificial Intelligence in Education (AIED 2024)</div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">PDF</a>
+            <a href="#" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-group">
+        <div class="year-label">2023</div>
+
+        <div class="pub-item">
+          <div class="pub-title">[Paper Title]</div>
+          <div class="pub-authors">Author A, <strong>Director Name</strong></div>
+          <div class="pub-venue">Computers &amp; Education, Vol. X, 2023</div>
+          <div class="pub-links">
+            <a href="#" class="pub-link">PDF</a>
+            <a href="#" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">IMAGINE</span><span class="logo-sub"> Lab</span>
+        <p>Intelligent Machines &amp; AI for Growth, INnovation, and Education</p>
+      </div>
+      <div class="footer-links">
+        <a href="research.html">Research</a>
+        <a href="team.html">Team</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#">Google Scholar</a>
+        <a href="#">Twitter/X</a>
+        <a href="#">Email</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 IMAGINE Lab · [University Name]</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
